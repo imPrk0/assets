@@ -1,0 +1,113 @@
+.messagediv{
+background-color:#fff;
+border-radius:10px 10px 10px 10px;
+box-shadow:0 0 25px 5px #999;
+color:#111;
+display:none;
+min-width:450px;
+padding:25px
+}
+.b-close {
+border-radius: 7px;
+font: bold 131% sans-serif;
+padding: 0 6px 2px;
+background-color: #2b91af;
+color: #fff;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+position: absolute;
+right: -7px;
+top: -7px;
+}
+.b-close:hover {
+background-color: #1e1e1e;
+}
+
+.panel {
+  width: 150px;
+  background-color: #EEE;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px; }
+  .panel .top {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #555555;
+    padding-top: 20px; }
+    .panel .top i {
+      display: block;
+      margin: 0px auto 20px; }
+    .panel .top h6 {
+      display: inline;
+      background-color: #555555;
+      position: relative;
+      top: 5px;
+      padding: 6px 12px;
+      border-radius: 30px;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 0.7em; }
+  .panel .bottom {
+    padding-top: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+    border-top: none; }
+    .panel .bottom h2 {
+      font-weight: 600;
+      margin: 0; }
+    .panel .bottom h6 {
+      font-size: 0.7em;
+      font-weight: 600;
+      position: relative;
+      bottom: 10px;
+      color: #555555; }
+  .panel .warning, .panel .warning h6 {
+    background-color: #ffa93c;
+    /*    box-shadow: inset 0 0 10px lighten($warning, 8%);
+        border: 1px solid darken($warning, 20%)*/ }
+  .panel .success, .panel .success h6 {
+    background-color: #4cb158;
+    /*    box-shadow: inset 0 0 10px lighten($success, 8%);
+        border: 1px solid darken($success, 20%)*/ }
+  .panel .danger, .panel .danger h6 {
+    background-color: #ea494a;
+    /*    box-shadow: inset 0 0 10px lighten($danger, 8%);
+        border: 1px solid darken($danger, 20%)*/ }
+  .panel .info, .panel .info h6 {
+    background-color: #14b8d4;
+    /*    box-shadow: inset 0 0 10px lighten($info, 8%);
+        border: 1px solid darken($info, 20%)*/ }
+  .panel .primary, .panel .primary h6 {
+    background-color: #007ccd;
+    /*    box-shadow: inset 0 0 10px lighten($primary, 8%);
+        border: 1px solid darken($primary, 20%)*/ }
+  .panel .purple, .panel .purple h6 {
+    background-color: #7932ea;
+    /*    box-shadow: inset 0 0 10px lighten($purple, 8%);
+        border: 1px solid darken($purple, 20%)*/ }
+.batch-big {
+  background-image:url(white-batch-64.png);
+  display: inline-block;
+  height: 64px;
+  width: 64px; }
+  .b-wifi {
+  background-position: -256px -64px; }
+
+.b-code {
+  background-position: -64px 0px; }
+
+.b-comment {
+  background-position: -192px -256px; }
+
+.b-flag {
+  background-position: -384px -256px; }
+
+.b-database {
+  background-position: -256px 0px; }
+
+.b-alarm {
+  background-position: -384px 0px; }
