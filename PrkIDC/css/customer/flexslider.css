@@ -1,0 +1,138 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav { margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider { min-height: 50px; overflow: hidden; margin: 0; padding: 0; background:#ffffff; }
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img { width: 100%; max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* Loading
+***********************/
+.loading #container {opacity: 0;}
+.loading:before  { content: 'LOADING'; display: block; margin: 0; text-align: center; color: #fff; font-weight: bold; font-size: 60px; opacity: 0.3; }
+body {width: 100%; float: left; opacity: 1; -webkit-transition: opacity 1s ease;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { position: relative; zoom: 1; }
+.flex-viewport {-webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption { zoom: 1; }
+.flex-caption {
+	width: 30%; 
+	left:0; 
+	right:0; 
+	margin:0 auto; 
+	padding:0; 
+	position: absolute;  
+	bottom: 38%; 
+	font-size:18px;
+}
+
+.flex-caption p { margin-bottom:0;}
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav li a {
+	top: 50%;
+	width: 40px; 
+	height: 40px; 
+	margin: 0 auto; 
+	display: block; 
+	position: absolute;  
+	margin-top: -15px;
+	z-index: 10; 
+	cursor: pointer; 
+	text-indent: -9999px; 
+	transition: 			all .3s ease;
+	-moz-transition: 		all .3s ease;
+	-ms-transition: 		all .3s ease;
+	-webkit-transition: 	all .3s ease;
+	-o-transition: 			all .3s ease;
+}
+
+.flex-direction-nav .flex-next { 
+	right: 40px; 
+	background:#444444 url(../../img/flex-arrow-next.png) no-repeat center center;
+	}
+	
+.flex-direction-nav .flex-prev {
+	left: 40px; 
+	background:#444444 url(../../img/flex-arrow-prev.png) no-repeat center center;
+	}
+
+.flex-direction-nav li .disabled {
+	opacity: .3; 
+	}
+
+.flex-direction-nav:hover .flex-prev { left:40px; background:#c30000 transparent url(../../img/flex-arrow-prev.png) no-repeat center center; cursor: pointer; }
+.flex-direction-nav:hover .flex-next { right:40px; background:#c30000 transparent url(../../img/flex-arrow-next.png) no-repeat center center; cursor: pointer; }
+
+/* Control Nav */
+.flex-control-nav { 
+	position: absolute; 
+	bottom: 0; 
+	right: 40px; 
+	text-align: center; 
+	width: auto; 
+}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline; }
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 25px; height: 6px; display: block; background:#666666; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background:#222222;}
+.flex-control-nav li a.active {background:#f5f5f5; cursor: default;}
+
+.flex-title { text-align:center; }
+
+.flex-title h5,
+.flex-title h6 { margin-bottom:5px }
+
+.flex-title h5 span {
+	padding: 10px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color: #ffffff;
+	background:url('../../img/opacs/dark70.png') 0 0 repeat;
+}
+.flex-title h6 span {
+	padding: 5px;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	background:url('../../img/opacs/white90.png') 0 0 repeat;
+}

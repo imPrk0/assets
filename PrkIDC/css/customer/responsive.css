@@ -1,0 +1,266 @@
+/**
+ * Theme : Hostme V2 -1.0
+ */ 
+ 
+/* ===================================================== */
+/* #Table (Portrait)
+/* ===================================================== */
+
+@media only screen and (max-width: 767px) {
+	img { width: auto; max-width: 100%; height: auto; }
+	.inner { width:95%;}
+
+	/* Layout */
+	#boxed #wrapper,
+	#layout_wrapper { width:760px; }		
+	.primarymenu { display:none !important; }
+	.logo { display:block; text-align:center; float:none; }
+
+	.menu-dropdown {
+		margin:0 auto;
+		height: 35px;
+		width: 100%;
+		padding: 0;
+		position: relative;
+		top:0;
+		cursor: pointer;
+		border-bottom: none;
+		display: block;
+		background: #ffffff url(../images/menu-icon.png) 0 0 no-repeat;
+	}
+
+	#sf-mobilemenu { margin:0 auto; display: none; }
+
+	#sf-mobilemenu ul { margin: 0 0 0 20px !important; }
+	#sf-mobilemenu li {
+		list-style:none;
+		position: relative;
+		border-top:1px solid #444444;
+		}
+
+	#sf-mobilemenu a {
+		display: block;
+		float: none;
+		padding:8px 20px;
+		color: #999;
+	}
+
+	#sf-mobilemenu a:hover{ color: #fafafa; }	
+
+	#sf-mobilemenu ul a { padding:8px 10px; width: auto; }
+	#sf-mobilemenu ul a:hover{ background: none; }
+
+	#sf-mobilemenu ul li:first-child a:after,
+	#sf-mobilemenu ul ul li:first-child a:after { border: 0;}
+	.sys_slider .full { wdith:auto; }
+
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* #Tablet  (Landscape) */
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* Design for a width of 768px and 959px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {	
+	img { width: auto; max-width: 100%; height: auto; }
+	
+	#boxed #wrapper,
+	#layout_wrapper,
+	.videoslider,
+	.planbox_slider,
+	#header-s4 .menuwrap,
+	#header-s2 .menuwrap{
+		width: 760px;
+	}
+	.inner,
+	.frontpage_teasercontent,
+	.pagemid .inner,
+	#subheader .inner,
+	.videoslider,
+	.section_inner,
+	.breadcrumbs {
+		width: 720px;
+	}	
+
+ 	.leftsidebar #main { width: 470px;}
+	.leftsidebar #sidebar { width: 250px; background: none;}
+ 	.rightsidebar #main { width: 470px;}
+	.rightsidebar #sidebar { width: 250px; background: none;}	
+	.sort_column1 .item  .sort_img { width: 460px;}
+	.menuwrap{border-radius: none;}
+
+	.callOutBox .callOut_Text { float: none; display: table; margin: 0 auto; }
+	.callOutBox .callOut_Button { float: none; display: table; margin: 0 auto; }
+	.callOutBox p { margin-bottom: 10px;}
+
+	.pricetable .column { width: 47%; margin-right: 3%; margin-bottom: 20px; }
+	.pricetable .column:last-child { margin-right:0; }
+
+}
+
+
+/* #Mobile (Portrait)
+===================================================== */
+/* Note: Design for a width of 320px */
+
+@media only screen and (min-width: 240px) and (max-width: 479px) {	
+	img { width:auto; max-width:100%; height:auto;}
+
+	#boxed #wrapper,
+	#layout_wrapper { width:320px; }	
+
+	.inner,
+	.menu-dropdown,
+	.copyright,
+	#sf-mobilemenu,
+	.section_inner,
+	.videoslider,
+	.planbox_slider,
+	.rightsidebar #main,
+	.rightsidebar #sidebar,
+	.leftsidebar #main,
+	.leftsidebar #sidebar,
+	.jcarousel-item-horizontal,
+	#subheader .subdesc			{ width:300px !important; }
+	#subheader .page-title { float: none; text-align: center; display: table; margin: 0 auto;}
+	#subheader .customtext{ float: none; text-align: center; display: table; margin: 0 auto;}
+	#header{ padding: 0 0 15px 0;}
+	#featured_slider { position: relative; margin: 0 auto; }
+	
+	.logo { display: table; text-align: center; float:none; margin: 15px auto; }	
+	
+	.videoslider,
+	.planbox_slider				{ padding-top:30px;}
+	.frontpage_teaser			{ position:relative; }
+	.pricetable .column			{ float: none; width: 100%; border-width:1px;}
+	.topbar .atpsocials { display: table; float: none; margin:0 auto;}
+	.half_width, .one_half, .one_third,
+	.two_third, .one_fourth, .one_fifth,
+	.three_fourth, .four_fifth, .two_fifth,
+	.three_fifth, .one_sixth, .four_sixth  { width:100%; margin-right:0; }
+	.flex-caption,
+	.ei-title,
+	.nivo-caption,
+	.rightsidebar #sidebar .content,
+	.leftsidebar #main .entry-content { padding-left:0; }		
+	.rightsidebar #main .entry-content,
+	.leftsidebar #sidebar .content { padding-right:0; }
+	.tabs li,
+	.fb-area,
+	.doubles li,
+	.vertabs .tabs,
+	.breadcrumbs,
+	.event_thumb,
+	.copyright_left,
+	.copyright_right,
+	.teaserbox .callout_button { float:none; }
+	.subdesc,
+	.breadcrumbs { text-align: center; width: 100%; }
+	.copyright_left,
+	.copyright_right,
+	.vertabs .tabs,
+	.sort_column2 .item,
+	.sort_column3 .item,
+	.sort_column4 .item,
+	.pricetable.col3 .column { width:100%; }
+
+	.copyright_left,
+	.copyright_right,
+	.header .one_half,
+	.header .one_third,
+	.events-carousel .carousel-event-block { text-align: center !important; }
+	.callOutBox  .callOut_Button{ float: none; text-align: center; display: table; margin: 0 auto; }
+	.pricetable .price-content {margin-bottom: 10px;}
+	.testimonial-box { margin: 0 0 30px 0;}
+	 #slider_bg  {background-color: #1d576d; background-image: none; }
+	 #slider_bg  { position: relative; margin: 0 auto; }
+	.callOutBox .button { margin-bottom:10px !important; }
+}
+
+/* ===================================================== */
+/* #Mobile (Landscape)
+/* ===================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+	img { width:auto; max-width:100%; height:auto;}
+
+	/* layout */ 
+	#boxed #wrapper,
+	#layout_wrapper {
+		width: 420px;
+	}
+
+	.inner,
+	.menu-dropdown,
+	.copyright,
+	#sf-mobilemenu,
+	.section_inner,
+	.videoslider,
+	.planbox_slider,
+	.rightsidebar #main,
+	.rightsidebar #sidebar,
+	.leftsidebar #main,
+	.leftsidebar #sidebar,
+	.jcarousel-item-horizontal,
+	#subheader .subdesc { width: 380px !important; }
+	#subheader .page-title { float: none; text-align: center; display: table; margin: 0 auto;}
+	#subheader .customtext{ float: none; text-align: center; display: table; margin: 0 auto;}
+	#header{ padding: 0 0 15px 0;}
+	.events-carousel .carousel-event-block { text-align:center; }
+	
+	.logo { display: table; text-align: center; float:none; margin: 15px auto; }
+	
+	.frontpage_teaser { position:relative; }
+	.videoslider,
+	.planbox_slider { padding-top:30px;}
+	#featured_slider { position: relative; margin: 0 auto; }
+	.pricetable .column { float: none; width: 100%; border-width:1px;}
+
+	.ei-title,
+	.flex-caption,
+	.nivo-caption,
+ 
+	.half_width, .one_half, .one_third,
+	.two_third, .one_fifth, .one_fourth,
+	.three_fourth, .four_fifth, .two_fifth,
+	.three_fifth, .one_sixth, .four_sixth		{ width:100%; margin-right:0; }
+	.topbar .atpsocials							{ display: table; float: none; margin:0 auto; }
+
+	.leftsidebar #sidebar .content,
+	.rightsidebar #main .entry-content			{ padding-right:0; }
+
+	.leftsidebar #main .entry-content,
+	.rightsidebar #sidebar .content				{ padding-left:0; }
+
+	.tabs li,
+	.fb-area,
+	.doubles li,
+	.event_thumb,
+	.copyright_left,
+	.copyright_right,
+	.teaserbox .callout_button					{ float:none; }
+
+	.vertabs .tabs,
+	.copyright_left,
+	.copyright_right,
+	.sort_column2 .item,
+	.sort_column3 .item,
+	.sort_column4 .item,
+	.pricetable.col3 .column					{ width:100%; }
+
+	.copyright_left,
+	.copyright_right,
+	.header .one_half,
+	.header .one_third { text-align: center !important; }
+	.subdesc,
+	.breadcrumbs { text-align: center; width: 100%; }
+	.callOutBox  .callOut_Button{ float: none; text-align: center; display: table; margin: 0 auto; }
+	.pricetable .price-content {margin-bottom: 10px;}
+	.testimonial-box { margin: 0 0 30px 0;}
+	 #slider_bg  {background-color: #1d576d; background-image: none; }
+	 #slider_bg  { position: relative; margin: 0 auto; }
+
+	.callOutBox .button { margin-bottom:10px !important; }
+}

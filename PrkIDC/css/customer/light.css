@@ -1,0 +1,117 @@
+/*-------------------------------------------------*/
+/* LIGHT COLOR                                     */
+/*-------------------------------------------------*/
+ 
+body,
+.topbar {
+	color:#444444;
+}
+
+/*-------------------------------------------------*/
+/* white color                                     */
+/*-------------------------------------------------*/
+ 
+#wrapper,
+.header {
+	background-color:#ffffff;
+}
+
+.header {
+	box-shadow:0 5px 0 rgba(0,0,0,0.05);
+}
+
+/*-------------------------------------------------*/
+/* alternate color                                 */
+/*-------------------------------------------------*/
+
+.topbar,	
+#subheader,
+.ac_wrap .ac_title,
+.fancytoggle .toggle-title { background-color: #f0f0f0; } 
+
+.ac_title .arrow { background-color:#bbbbbb; }
+
+/*-------------------------------------------------*/
+/* link color                                      */
+/*-------------------------------------------------*/
+
+a {
+	color:#d94800;
+}
+
+a:hover {
+	color:#222222;
+}
+
+/*-------------------------------------------------*/
+/* orange color                                    */
+/*-------------------------------------------------*/
+.ui-widget-header,
+.ui-state-active,
+#back-top a:hover span,
+.ac_title.active .arrow,
+.fancytoggle .active .arrow,
+.flickr_badge_image:hover,
+.flex-direction-nav:hover .flex-prev,
+.flex-direction-nav:hover .flex-next,
+.postformat-link, .postformat-quote,
+.postformat-video, .postformat-audio,
+.postformat-gallery, .postformat-aside,
+.postformat-image, .postformat-status,
+.postformat-standard,
+.sub_nav li.current_page_item > a,
+.sub_nav li.current_page_item > a:hover,
+.comment-edit-link, .post-edit-link
+{
+	background-color:#d94800;
+}
+
+/*-------------------------------------------------*/
+/* border color                                    */
+/*-------------------------------------------------*/
+
+.topbar,
+.ac_wrap .ac_title,
+.fancytoggle .toggle-title {
+	border-color:#dddddd;
+}
+
+/*-------------------------------------------------*/
+/* menu color                                      */
+/*-------------------------------------------------*/
+
+
+#atp_menu a {  color:#444444;    }
+
+#atp_menu li:hover, 
+#atp_menu li.sfHover {
+	background-color:#eeeeee;
+}
+
+#atp_menu ul { 
+	background:#ffffff;
+}
+
+#atp_menu li li:hover, 
+#atp_menu li li.sfHover,
+#atp_menu li li a:focus, 
+#atp_menu li li a:hover, 
+#atp_menu li li a:active {
+	background:#eeeeee;
+	}
+
+#atp_menu ul li { border-color:#dddddd; }
+
+#atp_menu li.current-cat > a, 
+#atp_menu li.current_page_item > a,
+#atp_menu li.current-page-ancestor > a { color: rgba(95, 91, 95, 0.64); }
+
+/* ---------------------------- */
+
+#footer {
+	color:#ffffff;
+	background-color:#172b4d;
+}
+
+#footer a { color:#999999;}
+#footer a:hover { color:#ffffff;}
